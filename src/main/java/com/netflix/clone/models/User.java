@@ -12,13 +12,13 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Entity
-@Table(name = "users")
 @Getter
 @Setter
 @ToString
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "users")
 public class User {
 
     @Id
@@ -74,6 +74,7 @@ public class User {
             joinColumns = @JoinColumn(name = "user_id"),
             inverseJoinColumns = @JoinColumn(name = "video_id")
     )
+    @ToString.Exclude
     private Set<Video> watchList = new HashSet<>();
 
     public void addWatchList(Video video) {
