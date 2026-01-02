@@ -1,6 +1,12 @@
 package com.netflix.clone.utils.service;
 
+import org.springframework.core.io.InputStreamResource;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.UrlResource;
+
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.RandomAccessFile;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
@@ -58,5 +64,65 @@ public class FileHandlerUtil {
         return new long[]{rangeStart, rangeEnd};
     }
 
+    public static Resource createRangeResource(Path filePath, long rangeStart, long rangeLength) throws IOException {
+        RandomAccessFile fileReader = new RandomAccessFile(filePath.toFile(), "r");
+
+        fileReader.seek(rangeStart);
+
+        InputStream partialContentStream = new InputStream() {
+
+            private long totalBytesRead = 0;
+
+            @Override
+            public int read() throws IOException {
+                if (totalBytesRead >= rangeLength) {
+                    fileReader.close();
+                    return -1;
+                }
+                totalBytesRead++;
+                return fileReader.read();
+            }
+
+            @Override
+            public int read(byte[] buffer, int offset, int length) throws IOException {
+
+                if (totalBytesRead >= rangeLength) {
+                    fileReader.close();
+                    return -1;
+                }
+
+                long remainingBytes = rangeLength - totalBytesRead;
+                int bytesToRead = (int) Math.min(length, remainingBytes);
+                int bytesActuallyRead = fileReader.read(buffer, offset, bytesToRead);
+                if (bytesActuallyRead > 0)
+                    totalBytesRead += bytesActuallyRead;
+
+                if (totalBytesRead >= rangeLength)
+                    fileReader.close();
+
+                return bytesActuallyRead;
+            }
+
+            @Override
+            public void close() throws IOException {
+                fileReader.close();
+            }
+        };
+
+        return new InputStreamResource(partialContentStream) {
+            @Override
+            public long contentLength() throws IOException {
+                return rangeLength;
+            }
+        };
+    }
+
+    public static Resource createFullResource(Path filePath) throws IOException {
+        Resource resource = new UrlResource(filePath.toUri());
+        if (!resource.exists() || !resource.isReadable())
+            throw new RuntimeException("File not found: " + filePath);
+
+        return resource;
+    }
 
 }
