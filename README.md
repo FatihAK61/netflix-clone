@@ -64,7 +64,7 @@ Before running this project, make sure you have:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/netflix-clone.git
+git clone https://github.com/FatihAK61/netflix-clone.git
 cd netflix-clone
 ```
 
