@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="86d6f8d8-67eb-4d2a-bc70-6b5e3ec39a43" name="Changes" comment="03.01.2026 13.58 Backend Finished">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/netflix-front/.idea/netflix-front.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/netflix-backend/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/netflix-backend/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/netflix-backend/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/netflix-backend/db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/netflix-backend/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/netflix-backend/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netflix-front/src/app/landing/landing.html" beforeDir="false" afterPath="$PROJECT_DIR$/netflix-front/src/app/landing/landing.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/netflix-front/src/app/landing/landing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/netflix-front/src/app/landing/landing.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/netflix-backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/config/AsyncConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/config/CorsConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/config/JacksonConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/config/OpenApiConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/controller/AuthController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/controller/FileUploadController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/controller/VideoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/controller/WatchListController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/dto/request/ChangePasswordRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/dto/request/EmailRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/dto/request/LoginRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/dto/request/ResetPasswordRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/dto/request/UserRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/dto/request/VideoRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/dto/response/EmailValidationResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/dto/response/LoginResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/dto/response/MessageResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/dto/response/PageResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/dto/response/UserResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/dto/response/VideoResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/dto/response/VideoStatsResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/helper/enums/Roles.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/helper/globalexceptionhandler/AccountDeactivatedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/helper/globalexceptionhandler/BadCredentialsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/helper/globalexceptionhandler/EmailAlreadyExistsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/helper/globalexceptionhandler/EmailNotVerifiedException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/helper/globalexceptionhandler/EmailSendingException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/helper/globalexceptionhandler/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/helper/globalexceptionhandler/InvalidCredentialsException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/helper/globalexceptionhandler/InvalidRoleException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/helper/globalexceptionhandler/InvalidTokenException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/helper/globalexceptionhandler/ResourceNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/models/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/models/Video.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/repository/VideoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/service/impl/AuthServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/service/impl/EmailServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/service/impl/FileUploadServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/service/impl/VideoServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/service/impl/WatchListServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/service/interfaces/IAuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/service/interfaces/IEmailService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/service/interfaces/IFileUploadService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/service/interfaces/IUserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/service/interfaces/IVideoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/service/interfaces/IWatchListService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/starter/NetflixApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/utils/jwt/JwtAuthenticationFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/utils/jwt/JwtUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/utils/service/FileHandlerUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/utils/service/PaginationUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/netflix/clone/utils/service/ServiceUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/netflix/clone/starter/NetflixApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="77" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Exception" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;FatihAK61&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/FatihAK61/netflix-clone.git&quot;,
+    &quot;accountId&quot;: &quot;ca11eafc-50dc-40c6-b9d5-ea0709ee9f0b&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="37ZSKsQ6ABOVMuRq6R7fpGBSd1g" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Maven.clone [clean].executor": "Run",
+    "Maven.clone [install].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.NetflixApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.35571054",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecapSpentCounter">
+    <option name="endsOfQuotaMs" value="1768755633670" />
+    <option name="spentUsd" value="0.6424329" />
+  </component>
+  <component name="RecapUselessUpdatesCounter">
+    <option name="suspendCountdown" value="0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/netflix-backend" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.netflix.clone.starter" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.netflix.clone.config" />
+      <recent name="com.netflix.clone.utils.jwt" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="NetflixApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="netflix" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.netflix.clone.starter.NetflixApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.138" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.29346.138" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="86d6f8d8-67eb-4d2a-bc70-6b5e3ec39a43" name="Changes" comment="" />
+      <created>1767109039370</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1767109039370</updated>
+      <workItem from="1767109040397" duration="607000" />
+      <workItem from="1767109662326" duration="183000" />
+      <workItem from="1767117106745" duration="736000" />
+      <workItem from="1767118922525" duration="8651000" />
+      <workItem from="1767159132192" duration="16668000" />
+      <workItem from="1767201382027" duration="10460000" />
+      <workItem from="1767252144828" duration="22977000" />
+      <workItem from="1767288571002" duration="6138000" />
+      <workItem from="1767334635406" duration="4201000" />
+      <workItem from="1767353092038" duration="11401000" />
+      <workItem from="1767382342302" duration="4740000" />
+      <workItem from="1767421992213" duration="18842000" />
+    </task>
+    <task id="LOCAL-00001" summary="30.12.2025 23.06">
+      <option name="closed" value="true" />
+      <created>1767125228859</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1767125228859</updated>
+    </task>
+    <task id="LOCAL-00002" summary="31.12.2025 00.08">
+      <option name="closed" value="true" />
+      <created>1767128907877</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1767128907877</updated>
+    </task>
+    <task id="LOCAL-00003" summary="31.12.2025 00.46">
+      <option name="closed" value="true" />
+      <created>1767131190064</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1767131190064</updated>
+    </task>
+    <task id="LOCAL-00004" summary="31.12.2025 09.57">
+      <option name="closed" value="true" />
+      <created>1767164274714</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1767164274714</updated>
+    </task>
+    <task id="LOCAL-00005" summary="31.12.2025 13.13">
+      <option name="closed" value="true" />
+      <created>1767176041868</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1767176041868</updated>
+    </task>
+    <task id="LOCAL-00006" summary="31.12.2025 13.42">
+      <option name="closed" value="true" />
+      <created>1767177764914</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1767177764914</updated>
+    </task>
+    <task id="LOCAL-00007" summary="01.01.2026 13.13">
+      <option name="closed" value="true" />
+      <created>1767262401537</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1767262401537</updated>
+    </task>
+    <task id="LOCAL-00008" summary="01.01.2026 18.26">
+      <option name="closed" value="true" />
+      <created>1767281205178</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1767281205178</updated>
+    </task>
+    <task id="LOCAL-00009" summary="02.01.2026 11.30">
+      <option name="closed" value="true" />
+      <created>1767342623772</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1767342623772</updated>
+    </task>
+    <task id="LOCAL-00010" summary="03.01.2026 12.05">
+      <option name="closed" value="true" />
+      <created>1767431119382</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1767431119382</updated>
+    </task>
+    <task id="LOCAL-00011" summary="03.01.2026 13.58 Backend Finished">
+      <option name="closed" value="true" />
+      <created>1767437899360</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1767437899360</updated>
+    </task>
+    <task id="LOCAL-00012" summary="03.01.2026 13.58 Backend Finished">
+      <option name="closed" value="true" />
+      <created>1767439615103</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1767439615103</updated>
+    </task>
+    <task id="LOCAL-00013" summary="03.01.2026 13.58 Backend Finished">
+      <option name="closed" value="true" />
+      <created>1767445615486</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1767445615486</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="30.12.2025 23.06" />
+    <MESSAGE value="31.12.2025 00.08" />
+    <MESSAGE value="31.12.2025 00.46" />
+    <MESSAGE value="31.12.2025 09.57" />
+    <MESSAGE value="31.12.2025 13.13" />
+    <MESSAGE value="31.12.2025 13.42" />
+    <MESSAGE value="01.01.2026 13.13" />
+    <MESSAGE value="01.01.2026 18.26" />
+    <MESSAGE value="02.01.2026 11.30" />
+    <MESSAGE value="03.01.2026 12.05" />
+    <MESSAGE value="03.01.2026 13.58 Backend Finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="03.01.2026 13.58 Backend Finished" />
+  </component>
+</project>

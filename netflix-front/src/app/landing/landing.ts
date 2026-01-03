@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-landing',
@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './landing.css',
 })
 export class Landing {
+  login() {
 
+  }
 }
