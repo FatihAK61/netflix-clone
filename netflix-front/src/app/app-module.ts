@@ -1,20 +1,25 @@
-import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule, provideBrowserGlobalErrorListeners} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing-module';
-import { App } from './app';
+import {AppRoutingModule} from './app-routing-module';
+import {App} from './app';
+import {Landing} from './landing/landing';
+import {SharedModule} from './shared/shared-module';
 
 @NgModule({
   declarations: [
-    App
+    App,
+    Landing
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners()
   ],
   bootstrap: [App]
 })
-export class AppModule { }
+export class AppModule {
+}
