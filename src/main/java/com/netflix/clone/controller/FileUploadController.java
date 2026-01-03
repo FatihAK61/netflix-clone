@@ -36,6 +36,11 @@ public class FileUploadController {
         return fileUploadService.serveVideo(uuid, range);
     }
 
+    @GetMapping("/image/{uuid}")
+    public ResponseEntity<Resource> serveImage(@PathVariable String uuid) {
+        return fileUploadService.serveImage(uuid);
+    }
+
     private Map<String, String> buildUploadResponse(String uuid, MultipartFile file) {
         Map<String, String> response = new HashMap<>();
         response.put("uuid", uuid);

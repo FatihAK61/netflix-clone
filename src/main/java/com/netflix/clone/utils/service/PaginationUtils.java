@@ -37,4 +37,14 @@ public class PaginationUtils {
         );
     }
 
+    public static <T, R> PageResponse<R> toPageResponseForVid(Page<T> page, List<R> mappedContent) {
+        return new PageResponse<>(
+                mappedContent,
+                page.getTotalElements(),
+                page.getTotalPages(),
+                page.getNumber(),
+                page.getSize()
+        );
+    }
+
 }

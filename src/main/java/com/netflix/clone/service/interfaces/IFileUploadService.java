@@ -12,4 +12,6 @@ public interface IFileUploadService {
 
     ResponseEntity<Resource> serveVideo(String uuid, String range);
 
+    ResponseEntity<Resource> serveImage(String uuid);
+
 }

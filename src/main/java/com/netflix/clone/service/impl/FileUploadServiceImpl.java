@@ -73,6 +73,24 @@ public class FileUploadServiceImpl implements IFileUploadService {
         }
     }
 
+    @Override
+    public ResponseEntity<Resource> serveImage(String uuid) {
+        try {
+            Path filePath = FileHandlerUtil.findFileByUuid(imageStorageLocation, uuid);
+            Resource resource = FileHandlerUtil.createFullResource(filePath);
+            String fileName = resource.getFilename();
+            String contentType = FileHandlerUtil.detectImageContentType(fileName);
+
+            return ResponseEntity.ok()
+                    .contentType(MediaType.parseMediaType(contentType))
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "inline; filename=\"" + fileName + "\"")
+                    .body(resource);
+            
+        } catch (Exception ex) {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
     private String storeFile(MultipartFile file, Path storageLocation) {
         String fileExtension = FileHandlerUtil.extractFileExtention(file.getOriginalFilename());
         String uuid = UUID.randomUUID().toString();
