@@ -5,11 +5,18 @@ import {AppRoutingModule} from './app-routing-module';
 import {App} from './app';
 import {Landing} from './landing/landing';
 import {SharedModule} from './shared/shared-module';
+import {Signup} from './signup/signup';
+import {provideHttpClient} from '@angular/common/http';
+import { Login } from './login/login';
+import { VerifyEmail } from './verify-email/verify-email';
 
 @NgModule({
   declarations: [
     App,
-    Landing
+    Landing,
+    Signup,
+    Login,
+    VerifyEmail
   ],
   imports: [
     BrowserModule,
@@ -17,7 +24,8 @@ import {SharedModule} from './shared/shared-module';
     SharedModule
   ],
   providers: [
-    provideBrowserGlobalErrorListeners()
+    provideBrowserGlobalErrorListeners(),
+    provideHttpClient()
   ],
   bootstrap: [App]
 })
