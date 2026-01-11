@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {AuthService} from '../shared/services/auth-service';
 
 @Component({
   selector: 'app-verify-email',
@@ -6,6 +8,41 @@ import { Component } from '@angular/core';
   templateUrl: './verify-email.html',
   styleUrl: './verify-email.css',
 })
-export class VerifyEmail {
+
+export class VerifyEmail implements OnInit {
+  loading = true;
+  success = false;
+  message = "";
+
+  constructor(
+    private route: ActivatedRoute,
+    private authService: AuthService
+  ) {
+  }
+
+  ngOnInit(): void {
+    const token = this.route.snapshot.queryParamMap.get('token');
+
+    if (!token) {
+      this.loading = false;
+      this.success = false;
+      this.message = "Invalid verification link. No token provided.";
+      return;
+    }
+
+    this.authService.verifyEmail(token).subscribe({
+      next: (response: any) => {
+        this.loading = false;
+        this.success = true;
+        this.message = response.message || "Email verified successfully!"
+      },
+      error: (err) => {
+        this.loading = false;
+        this.success = false;
+        this.message = err.error?.error || "Something went wrong!"
+      }
+    })
+
+  }
 
 }

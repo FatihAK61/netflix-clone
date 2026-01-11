@@ -7,6 +7,7 @@ import {AbstractControl, ValidationErrors, ValidatorFn} from '@angular/forms';
   providedIn: 'root',
 })
 export class AuthService {
+
   private apiUrl = environment.apiUrl + '/auth';
 
   constructor(private http: HttpClient) {
@@ -26,7 +27,7 @@ export class AuthService {
   }
 
   verifyEmail(token: string) {
-    return this.http.get(this.apiUrl + '/verify-email/?token=' + token);
+    return this.http.get(this.apiUrl + '/verify-email?token=' + token);
   }
 
 }
